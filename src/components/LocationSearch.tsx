@@ -37,6 +37,7 @@ function LocationSearch({placeholder, fetchAddress}: LocationSearchProps) {
           textInputContainer: styles.textContainerStyle,
           textInput: styles.textInputStyle,
         }}
+        
       />
     </KeyboardAvoidingView>
   );
