@@ -3,6 +3,7 @@ import AppStructure from '../constant/Structure';
 import ChooseLocation from '../layouts/ChooseLocation';
 import {getCurrentLocation, locationPermission} from '../utils/location';
 import Toast from 'react-native-toast-message';
+import Battery from '../components/Battery';
 
 function Home() {
   const [liveLocation, setLiveLocation] = useState<any>(null);
@@ -47,6 +48,7 @@ function Home() {
       <ChooseLocation
         userLocation={liveLocation}
       />
+      <Battery />
     </AppStructure>
   );
 }
